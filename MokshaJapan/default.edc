@@ -41,6 +41,15 @@
  * and make sure you have replaced/provided everything here.
  */
 
+data {
+	item: "theme/name" 		"japan";
+	item: "theme/version"	"0.1.0";
+	item: "theme/author"	"Bodhi Team";
+	item: "theme/license"	"BSD Artistic License";
+	item: "gtk-theme"       "Japan GTK";
+	item: "version"         "110";
+}
+
 /* Spectrum used in all the gradient icons
  * This needs to be defined outside of the collections
  *
@@ -279,7 +288,6 @@ color_classes {
  * parts (images, text, rects etc.))
  */
 
-data.item: "gtk-theme" "B_and_W";
 collections {
 /* begin the collection of edje groups that are in this file */
 
