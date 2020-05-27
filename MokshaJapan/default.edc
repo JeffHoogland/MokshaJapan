@@ -11581,6 +11581,7 @@ CONNMAN_ICON(ethernet)
                   align: 0.5 0.5;
                   size: 8;
                   min: 1 1;
+                  ellipsis: -1;
                   text_class: "module_small";
                }
             }
@@ -11645,6 +11646,7 @@ CONNMAN_ICON(ethernet)
                   align: 0.5 0.5;
                   size: 8;
                   min: 1 1;
+                  ellipsis: -1;
                   text_class: "module_small";
                }
             }
