@@ -2032,7 +2032,7 @@ group {
                    * make it extend downward from that point
                    * with the text size defining the min size
                    * vertically below */
-                  offset: 30 2;
+                  offset: -30 2;
                   to_x: "icon_area";
                }
                color_class: "border_title";
