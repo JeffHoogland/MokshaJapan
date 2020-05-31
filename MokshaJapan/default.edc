@@ -7572,11 +7572,11 @@ group {
                state: "default" 0.0;
                rel1 {
                   relative: 0.0 0.0;
-                  offset: 3 3;
+                  offset: 0 3;
                }
                rel2 {
                   relative: 1.0 1.0;
-                  offset: -4 -4;
+                  offset: 0 0;
                }
             }
          }
