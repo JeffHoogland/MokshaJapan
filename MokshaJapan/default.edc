@@ -10520,7 +10520,7 @@ CONNMAN_ICON(ethernet)
       min: 56 16;
       max: 512 128;
       images {
-         image: "flip_base.png" COMP;
+         //~ image: "flip_base.png" COMP;
          image: "flip_base_shad.png" COMP;
          image: "flip_shad.png" COMP;
          image: "flip_0t.png" COMP;
