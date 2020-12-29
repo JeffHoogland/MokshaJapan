@@ -11890,7 +11890,7 @@ CONNMAN_ICON(ethernet)
             scale: 1;
             description { state: "default" 0.0;
                align: 0.5 0.5;
-               color: 0 0 0 64;
+               color: 0 0 0 128;
                color3: 255 255 255 255;
                rel1.offset: 3 3;
                rel2.offset: -3 -3;
@@ -11973,6 +11973,12 @@ CONNMAN_ICON(ethernet)
                inherit: "default" 0.0;
                color: 255 255 255 255;
             }
+            description { state: "weeknumb" 0.0;
+               inherit: "default" 0.0;
+               text.size: 7;
+               text.align: 0.8 0.0;
+               color_class: "calendar_weekend";
+            }  
          }
          part { name: "inset";
             mouse_events: 0;
@@ -12025,6 +12031,11 @@ CONNMAN_ICON(ethernet)
             target: "day";
             target: "e.text.label";
          }
+         program {
+            signal: "e,state,week"; source: "e";
+            action: STATE_SET "weeknumb" 0.0;
+            target: "e.text.label";
+      }  
       }
    }
    group { name: "e/modules/clock/calendar";
@@ -12234,7 +12245,7 @@ CONNMAN_ICON(ethernet)
                step: 7 1;
                table {
                   homogeneous: TABLE;
-                  padding: 1 1;
+                  padding: 5 1;
                   align: 0.5 0.5;
                   min: 1 1;
                }
@@ -12255,6 +12266,7 @@ CONNMAN_ICON(ethernet)
                DAYNAME(4);
                DAYNAME(5);
                DAYNAME(6);
+               DAYNAME(7);
             } }
          }
          part { name: "e.table.days"; type: TABLE;
@@ -12287,6 +12299,7 @@ CONNMAN_ICON(ethernet)
                DAY(4, 0);
                DAY(5, 0);
                DAY(6, 0);
+               DAY(7, 0);
 
                DAY(0, 1);
                DAY(1, 1);
@@ -12295,6 +12308,7 @@ CONNMAN_ICON(ethernet)
                DAY(4, 1);
                DAY(5, 1);
                DAY(6, 1);
+               DAY(7, 1);
 
                DAY(0, 2);
                DAY(1, 2);
@@ -12303,6 +12317,7 @@ CONNMAN_ICON(ethernet)
                DAY(4, 2);
                DAY(5, 2);
                DAY(6, 2);
+               DAY(7, 2);
 
                DAY(0, 3);
                DAY(1, 3);
@@ -12311,6 +12326,7 @@ CONNMAN_ICON(ethernet)
                DAY(4, 3);
                DAY(5, 3);
                DAY(6, 3);
+               DAY(7, 3);
                
                DAY(0, 4);
                DAY(1, 4);
@@ -12319,6 +12335,7 @@ CONNMAN_ICON(ethernet)
                DAY(4, 4);
                DAY(5, 4);
                DAY(6, 4);
+               DAY(7, 4);
 
                DAY(0, 5);
                DAY(1, 5);
@@ -12327,6 +12344,7 @@ CONNMAN_ICON(ethernet)
                DAY(4, 5);
                DAY(5, 5);
                DAY(6, 5);
+               DAY(7, 5);
             } }
          }
          part { name: "inset";
