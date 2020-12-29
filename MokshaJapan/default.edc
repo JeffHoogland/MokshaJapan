@@ -10883,7 +10883,7 @@ CONNMAN_ICON(ethernet)
          }
          
 #define DIGIT(nom, relto, clipto) \
-         part { name: nom"base"; \
+         part { name: nom"base"; type: RECT; \
             scale: 1; \
             description { state: "default" 0.0; \
                rel1.to: relto; \
@@ -11294,7 +11294,7 @@ CONNMAN_ICON(ethernet)
          DIGIT("s2", "secs2", "sclip");
 
 #define DIGAP(nom, relto, clipto) \
-         part { name: nom"base"; \
+         part { name: nom"base"; type: RECT; \
             scale: 1; \
             description { state: "default" 0.0; \
                rel1.to: relto; \
@@ -18373,6 +18373,7 @@ target: "region";
             description {
                state: "default" 0.0;
                color: 0 0 0 0;
+               image.normal: "icon_efm_vol_unmounted.png";
             }
             description {
                state: "visible" 0.0;
@@ -18388,6 +18389,7 @@ target: "region";
                   relative: 1.0 1.0;
                   to: "icon";
                }
+               image.normal: "icon_efm_vol_unmounted.png";
             }
             description {
                state: "unmounted" 0.0;
@@ -18407,6 +18409,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_dnd_copy.png";
                color: 0 0 0 0;
             }
             description {
@@ -18417,6 +18420,7 @@ target: "region";
                min: 24 24;
                rel1.relative: 0.75 0.0;
                rel2.relative: 1.0 1.0;
+               image.normal: "icon_efm_dnd_copy.png";
             }
             description {
                state: "copy" 0.0;
@@ -18928,6 +18932,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_vol_unmounted.png";
                color: 0 0 0 0;
             }
             description {
@@ -18944,6 +18949,7 @@ target: "region";
                   relative: 1.0 1.0;
                   to: "icon";
                }
+               image.normal: "icon_efm_vol_unmounted.png";
             }
             description {
                state: "unmounted" 0.0;
@@ -18963,6 +18969,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_dnd_copy.png";
                color: 0 0 0 0;
             }
             description {
@@ -18973,6 +18980,7 @@ target: "region";
                min: 24 24;
                rel1.relative: 0.75 0.0;
                rel2.relative: 1.0 1.0;
+               image.normal: "icon_efm_dnd_copy.png";
             }
             description {
                state: "copy" 0.0;
@@ -19440,6 +19448,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_vol_unmounted.png";
                color: 0 0 0 0;
             }
             description {
@@ -19456,6 +19465,7 @@ target: "region";
                   relative: 1.0 1.0;
                   to: "icon";
                }
+               image.normal: "icon_efm_vol_unmounted.png";
             }
             description {
                state: "unmounted" 0.0;
@@ -19475,6 +19485,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_dnd_copy.png";
                color: 0 0 0 0;
             }
             description {
@@ -19485,6 +19496,7 @@ target: "region";
                min: 24 24;
                rel1.relative: 0.75 0.0;
                rel2.relative: 1.0 1.0;
+               image.normal: "icon_efm_dnd_copy.png";
             }
             description {
                state: "copy" 0.0;
@@ -19982,6 +19994,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_vol_unmounted.png";
                color: 0 0 0 0;
             }
             description {
@@ -19998,6 +20011,7 @@ target: "region";
                   relative: 1.0 1.0;
                   to: "icon";
                }
+               image.normal: "icon_efm_vol_unmounted.png";
             }
             description {
                state: "unmounted" 0.0;
@@ -20017,6 +20031,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_dnd_copy.png";
                color: 0 0 0 0;
             }
             description {
@@ -20027,6 +20042,7 @@ target: "region";
                min: 24 24;
                rel1.relative: 0.75 0.0;
                rel2.relative: 1.0 1.0;
+               image.normal: "icon_efm_dnd_copy.png";
             }
             description {
                state: "copy" 0.0;
@@ -20532,6 +20548,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_vol_unmounted.png";
                color: 0 0 0 0;
             }
             description {
@@ -20547,6 +20564,7 @@ target: "region";
                   relative: 1.0 1.0;
                   to: "icon";
                }
+               image.normal: "icon_efm_vol_unmounted.png";
             }
             description {
                state: "unmounted" 0.0;
@@ -20566,6 +20584,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_dnd_copy.png";
                color: 0 0 0 0;
             }
             description {
@@ -20579,6 +20598,7 @@ target: "region";
                rel2 {
                   relative: 1.0 1.0;
                }
+               image.normal: "icon_efm_dnd_copy.png";
             }
             description {
                state: "copy" 0.0;
@@ -21107,6 +21127,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_vol_unmounted.png";
                color: 0 0 0 0;
             }
             description {
@@ -21122,6 +21143,7 @@ target: "region";
                   relative: 1.0 1.0;
                   to: "icon";
                }
+               image.normal: "icon_efm_vol_unmounted.png";
             }
             description {
                state: "unmounted" 0.0;
@@ -21141,6 +21163,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_dnd_copy.png";
                color: 0 0 0 0;
             }
             description {
@@ -21154,6 +21177,7 @@ target: "region";
                rel2 {
                   relative: 1.0 1.0;
                }
+               image.normal: "icon_efm_dnd_copy.png";
             }
             description {
                state: "copy" 0.0;
@@ -21684,6 +21708,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_vol_unmounted.png";
                color: 0 0 0 0;
             }
             description {
@@ -21699,6 +21724,7 @@ target: "region";
                   relative: 1.0 1.0;
                   to: "icon";
                }
+               image.normal: "icon_efm_vol_unmounted.png";
             }
             description {
                state: "unmounted" 0.0;
@@ -21718,6 +21744,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_dnd_copy.png";
                color: 0 0 0 0;
             }
             description {
@@ -21731,6 +21758,7 @@ target: "region";
                rel2 {
                   relative: 1.0 1.0;
                }
+               image.normal: "icon_efm_dnd_copy.png";
             }
             description {
                state: "copy" 0.0;
@@ -22260,6 +22288,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_vol_unmounted.png";
                color: 0 0 0 0;
             }
             description {
@@ -22275,6 +22304,7 @@ target: "region";
                   relative: 1.0 1.0;
                   to: "icon";
                }
+               image.normal: "icon_efm_vol_unmounted.png";
             }
             description {
                state: "unmounted" 0.0;
@@ -22294,6 +22324,7 @@ target: "region";
             repeat_events: 0;
             description {
                state: "default" 0.0;
+               image.normal: "icon_efm_dnd_copy.png";
                color: 0 0 0 0;
             }
             description {
@@ -22306,6 +22337,9 @@ target: "region";
                }
                rel2 {
                   relative: 1.0 1.0;
+               }
+               image {
+                  normal: "icon_efm_dnd_copy.png";
                }
             }
             description {
@@ -26883,6 +26917,7 @@ target: "region";
          }
          part {
             name: "label";
+            type: RECT;
             mouse_events: 0;
             clip_to: "clip";
             description {
@@ -28624,42 +28659,50 @@ target: "region";
          }
          part {
             name: "v1";
+            type: RECT; 
             mouse_events: 1;
             clip_to: "vclip";
             description {
                state: "default" 0.0;
                rel2.relative: 1.0 0.0;
                rel2.offset: -1 9;
+               color: 0 0 0 0; 
             }
          }
          part {
             name: "v2";
+            type: RECT; 
             mouse_events: 1;
             clip_to: "vclip";
             description {
                state: "default" 0.0;
                rel1.relative: 0.0 1.0;
                rel1.offset: 0 -8;
+               color: 0 0 0 0; 
             }
          }
          part {
             name: "h1";
+            type: RECT; 
             mouse_events: 1;
             clip_to: "hclip";
             description {
                state: "default" 0.0;
                rel2.relative: 0.0 1.0;
                rel2.offset: 9 -1;
+               color: 0 0 0 0; 
             }
          }
          part {
             name: "h2";
+            type: RECT; 
             mouse_events: 1;
             clip_to: "hclip";
             description {
                state: "default" 0.0;
                rel1.relative: 1.0 0.0;
                rel1.offset: -8 0;
+               color: 0 0 0 0; 
             }
          }
          part {
