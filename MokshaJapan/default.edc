@@ -631,6 +631,17 @@ group {
                inherit: "default" 0.0;
                visible: 1;
                color: 255 255 255 255;
+               image {
+                  tween: "busy-1.png";
+                  tween: "busy-2.png";
+                  tween: "busy-3.png";
+                  tween: "busy-4.png";
+                  tween: "busy-5.png";
+                  tween: "busy-6.png";
+                  tween: "busy-7.png";
+                  tween: "busy-8.png";
+                  normal: "busy-9.png";
+               } 
             }
          }
          part {
@@ -2281,6 +2292,17 @@ group {
                inherit: "default" 0.0;
                visible: 1;
                color: 255 255 255 255;
+               image {
+                  tween: "busy-1.png";
+                  tween: "busy-2.png";
+                  tween: "busy-3.png";
+                  tween: "busy-4.png";
+                  tween: "busy-5.png";
+                  tween: "busy-6.png";
+                  tween: "busy-7.png";
+                  tween: "busy-8.png";
+                  normal: "busy-9.png";
+               } 
             }
          }
          part {
@@ -3414,6 +3436,17 @@ group {
                inherit: "default" 0.0;
                visible: 1;
                color: 255 255 255 255;
+               image {
+                  tween: "busy-1.png";
+                  tween: "busy-2.png";
+                  tween: "busy-3.png";
+                  tween: "busy-4.png";
+                  tween: "busy-5.png";
+                  tween: "busy-6.png";
+                  tween: "busy-7.png";
+                  tween: "busy-8.png";
+                  normal: "busy-9.png";
+               } 
             }
          }
          part {
@@ -4352,6 +4385,17 @@ group {
                inherit: "default" 0.0;
                visible: 1;
                color: 255 255 255 255;
+               image {
+                  tween: "busy-1.png";
+                  tween: "busy-2.png";
+                  tween: "busy-3.png";
+                  tween: "busy-4.png";
+                  tween: "busy-5.png";
+                  tween: "busy-6.png";
+                  tween: "busy-7.png";
+                  tween: "busy-8.png";
+                  normal: "busy-9.png";
+               } 
             }
          }
          part {
@@ -5309,6 +5353,17 @@ group {
                inherit: "default" 0.0;
                visible: 1;
                color: 255 255 255 255;
+               image {
+                  tween: "busy-1.png";
+                  tween: "busy-2.png";
+                  tween: "busy-3.png";
+                  tween: "busy-4.png";
+                  tween: "busy-5.png";
+                  tween: "busy-6.png";
+                  tween: "busy-7.png";
+                  tween: "busy-8.png";
+                  normal: "busy-9.png";
+               } 
             }
          }
          part {
@@ -35429,7 +35484,7 @@ target: "region";
          }
          part {
             name: "outline";
-	    mouse_events: 0;
+            mouse_events: 0;
             description {
                state: "default" 0.0;
                rel1.to: "bg";
@@ -35477,11 +35532,11 @@ target: "region";
                color: 255 255 255 255;
                rel1 {
                   relative: 0.0 0.0;
-                  offset: 0   3;
+                  offset: 0   0;
                }
                rel2 {
                   relative: 1.0 1.0;
-                  offset: -5  -4;
+                  offset: -5  0;
                }
             }
          }
@@ -35582,14 +35637,14 @@ target: "region";
                rel1 {
                   to_x: "clip";
                   to_y: "base";
-                  offset: 5 2;
-		  relative: 1.0 0.0;
+                  offset: 5 0;
+                  relative: 1.0 0.0;
                }
                rel2 {
                   relative: 0.0 1.0;
-                  offset: 4 -1;
+                  offset: 4 0;
                   to_x: "arrow";
-	          to_y: "spacer";
+                  to_y: "spacer";
                }
                text {
                   font: "Sans";
